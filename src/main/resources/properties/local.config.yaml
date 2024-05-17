@@ -1,0 +1,18 @@
+http:
+  host: localhost
+  port: "8083"
+  
+https:
+  host: localhost
+  port: "8084"
+
+mongodb:
+  link: ${secure::mongodb.link}
+  
+keystore:
+  type: "JKS"
+  path: "keystore/keystore-local.jks"
+  alias: ${secure::keystore.alias}
+  password: ${secure::keystore.password}
+    
+  
